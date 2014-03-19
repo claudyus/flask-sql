@@ -1,0 +1,5 @@
+Just a test project for flask using SQLAlchemy
+
+
+Setup: sudo pip install Flask-SQLAlchemy
+Run: python app.py

@@ -1,0 +1,15 @@
+{% extends "base.tpl.html" %}
+
+{% block content %}
+
+<h1>User list</h1>
+<ul>
+{% for user in users %}
+  <li>({{ user.id }}) {{ user.username|e }} - {{ user.email|e }}</li>
+{% else %}
+    <li><em>no users present</em></li>
+{% endfor %}
+</ul>
+
+<p><a href="/register">Register a user</a></p>
+{% endblock %}

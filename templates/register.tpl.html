@@ -1,0 +1,44 @@
+{% extends "base.tpl.html" %}
+
+{% block content %}
+<form class="form-horizontal" method="post">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Registration form</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="username">Username</label>
+  <div class="controls">
+    <input id="username" name="username" type="text" placeholder="placeholder" class="input-xlarge">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="control-group">
+  <label class="control-label" for="email">Email</label>
+  <div class="controls">
+    <input id="email" name="email" type="text" placeholder="placeholder" class="input-xlarge">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="singlebutton"></label>
+  <div class="controls">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Login</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+<pre>
+  {{ request.form }}
+</pre>
+
+<p><a href="/list/">Show all users</a></p>
+{% endblock %}

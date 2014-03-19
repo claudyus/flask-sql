@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link href="//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    {% endblock %}
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2014 by <b>me</b> borrowed by <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">someone else work</a>.
+        {% endblock %}
+    </div>
+</body>
